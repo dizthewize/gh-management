@@ -1,0 +1,26 @@
+{
+  "name": "gh-management",
+  "owner": {
+    "name": "dizthewize",
+    "url": "https://github.com/dizthewize"
+  },
+  "metadata": {
+    "description": "GitHub management skill suite — create repos, manage commits, and handle the full PR lifecycle from within Claude Code",
+    "version": "1.0.0",
+    "repository": "https://github.com/dizthewize/gh-management"
+  },
+  "plugins": [
+    {
+      "name": "gh-management",
+      "description": "Coordinator + specialist skills for GitHub repo creation, commit management (including reverts and conflict resolution), and PR lifecycle — wraps gh-issue for issue context",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/gh",
+        "./skills/gh-repo",
+        "./skills/gh-commit",
+        "./skills/gh-pr"
+      ]
+    }
+  ]
+}
